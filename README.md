@@ -1,4 +1,4 @@
-# text-modification-for-notion
+# Text Modification For Notion
 This repository contain some module &amp; functions that can be useful to automate process on editing text that will be pasted on `Notion` (a productivity app).
 
 ## Description
