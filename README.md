@@ -1,8 +1,8 @@
 # Text Modification For Notion
-This repository contain some module &amp; functions that can be useful to automate process on editing text that will be pasted on `Notion` (a productivity app).
+This repository contain some module &amp; functions that can be useful to automate process on editing text that will be pasted on [`Notion`](notion.so) (a productivity app).
 
 ## Description
-`Notion` is a freemium productivity and note-taking web application developed by Notion Labs Inc. It offers organizational tools including task management, project tracking, to-do lists, bookmarking, and more.
+[`Notion`](notion.so) is a freemium productivity and note-taking web application developed by Notion Labs Inc. It offers organizational tools including task management, project tracking, to-do lists, bookmarking, and more.
 
 But there is a problem with Notioin. Often we want to paste text from a text editor into the Notion app but we get bad formatting when the text is pasted. For example when we want to paste a list that we separate each item with a new line like this:
 
