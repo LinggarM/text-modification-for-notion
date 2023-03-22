@@ -14,12 +14,15 @@ def get_title(url):
 	title = ""
 
 	# Check if the URL is a playlist or a video
-	if 'playlist' in url:
-		# Get playlist data and title
-		title = Playlist(url).title
-	else:
-		# Get video data and title
-		title = YouTube(url).title
+	try:
+		if 'playlist' in url:
+			# Get playlist data and title
+			title = Playlist(url).title
+		else:
+			# Get video data and title
+			title = YouTube(url).title
+	except Exception as e:
+		pass
 
 	# Return the title
 	return title
@@ -38,12 +41,15 @@ def get_channel_name(url):
 	channel_name = ""
 
 	# Check if the URL is a playlist or a video
-	if 'playlist' in url:
-		# Get playlist data and owner channel name
-		channel_name = Playlist(url).owner
-	else:
-		# Get video data and author channel name
-		channel_name = YouTube(url).author
+	try:
+		if 'playlist' in url:
+			# Get playlist data and owner channel name
+			channel_name = Playlist(url).owner
+		else:
+			# Get video data and author channel name
+			channel_name = YouTube(url).author
+	except Exception as e:
+		pass
 
 	# Return the channel name
 	return channel_name

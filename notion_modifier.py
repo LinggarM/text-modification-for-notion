@@ -156,8 +156,8 @@ def add_youtube_title_and_channel_name(text):
 			# Append to text_output
 			text_output = f"{text_output}- {url} {title} - {channel_name}\n"
 		else:
-			text_output = f"{data}\n"
-	
+			text_output = f"{text_output}{data}\n"
+
 	# Get processing time
 	time.sleep(1)  # store end time 
 	end = time.time()  # total time taken
